@@ -1,7 +1,10 @@
+*{
+    background-color: #000;
+}
 .relogio{
 	width:600px;
 	height:600px;
-	border: solid 40px #000;
+	border: solid 20px #fff;
 	border-radius:50%;
 	margin: 100px auto;
 	position: relative;
@@ -10,7 +13,7 @@
 #minuto{
 	width: 16px;
 	height: 250px;
-	background-color: #000;
+	background-color: #E9FC19;
 	margin: 50px 292px;
 	transform-origin: 8px bottom;
 	position: absolute;
@@ -21,7 +24,7 @@
 #hora{
 	width: 16px;
 	height: 200px;
-	background-color:#000;
+	background-color:#E9FC19;
 	margin:105px 292px;
 	transform-origin: 8px bottom;
 	position:absolute;
@@ -44,7 +47,7 @@
 	height: 30px;
 	border-radius: 50%;
 	margin: 285px 285px;
-	background-color: #000;
+	background-color: #fff;
 	position: absolute;
 	z-index: 1;
 	box-shadow: 1px 1px 5px;
