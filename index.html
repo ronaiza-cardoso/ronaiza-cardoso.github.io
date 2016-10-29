@@ -1,201 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Faro Food - Cadê a comida!?</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Faro Food - Cadê a comida!?</title>
 
-    <!-- CSS  -->
-    <link href="./css/icon.css?family=Material+Icons" rel="stylesheet">
-    <link href="./css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- CSS  -->
+  <link href="./css/icon.css?family=Material+Icons" rel="stylesheet">
+  <link href="./css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-<nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">FaroFood</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#!">Lista de foodtrucks</a></li>
-            <li><a href="#!">Promoções</a></li>
-            <li><a href="#!">Eventos</a></li>
-        </ul>
+  <nav class="light-red lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="" class="brand-logo"><img class="circle" alt="" width="105px" style="margin-left:-40px; margin-top:10px;" src="images/farofood.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#!">Lista de foodtrucks</a></li>
+		<li><a href="#!">Promoções</a></li>
+		<li><a href="#!">Eventos</a></li>
+      </ul>
 
-        <ul id="nav-mobile" class="side-nav">
-            <li><a href="#!">Lista de foodtrucks</a></li>
-            <li><a href="#!">Promoções</a></li>
-            <li><a href="#!">Eventos</a></li>
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#!">Lista de foodtrucks</a></li>
+		<li><a href="#!">Promoções</a></li>
+		<li><a href="#!">Eventos</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-</nav>
-<div class="section no-pad-bot" id="index-banner">
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-        <div class="mostra-mapa">
-            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-            <section>
-                <article>
-                    <p><span id="status">Por favor aguarde enquanto nós tentamos locar você...</span></p>
-                </article>
-            </section>
-        </div>
+		<div class="mostra-mapa">
+			<br><h5>Responda o formulário clicando <a href="https://goo.gl/ON0cVt">aqui</a> que em seguida lhe enviaremos o cupom!</h5>
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcHX1_YtKVqW-xw8QzOiRncNOVwpJPow0&callback=initMap"></script>
+			<section>
+				<article>
+					<p><span id="status">Por favor aguarde enquanto nós tentamos localizar você...</span></p>
+				</article>
+			 </section>
+		</div>
+	
+	<!-- Dropdown Trigger -->
+	<div class="row">
+		<div class="col s12 m12 x12">
+	  <a class='dropdown-button btn right' href='#' data-activates='dropdown1'><i class="material-icons">import_export</i> Ordernar por</a>
+	  </div>
+	</div>
 
-        <!-- Dropdown Trigger -->
-        <div class="row">
-            <div class="col s12 m12 x12">
-                <a class='dropdown-button btn right' href='#' data-activates='dropdown1'><i class="material-icons">import_export</i> Ordernar por</a>
-            </div>
-        </div>
-
-        <!-- Dropdown Structure -->
-        <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="#!">distância</a></li>
-            <li><a href="#!">menor preço</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">maior preço</a></li>
-        </ul>
-        <ul class="collection mostra-lista">
-
-            <li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.7544361,-47.9328306)">
-                <img class="circle" alt="" src="images/yuna.jpg">
-                <span class="title">Geléia Burger</span>
-                <p>
-                    Categoria: Hamburger
-                </p>
-                <a class="secondary-content" href="#!">
-                    <i class="material-icons">grade</i>
-                </a>
-            </li>
-
-            <li class="collection-item avatar">
-                <img class="circle" alt="" src="images/yuna.jpg">
-                <span class="title">Title</span>
-                <p>
-                    First Line<br>
-                    Second Line
-                </p>
-                <a class="secondary-content" href="#!">
-                    <i class="material-icons">grade</i>
-                </a>
-                <a class="secondary-content" href="#!">
-                    <i class="material-icons">grade</i>
-                </a>
-                <a class="secondary-content" href="#!">
-                    <i class="material-icons">grade</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <img class="circle" alt="" src="images/yuna.jpg">
-                <span class="title">Title</span>
-                <p>
-                    First Line<br>
-                    Second Line
-                </p>
-                <a class="secondary-content" href="#!">
-                    <i class="material-icons">grade</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <img class="circle" alt="" src="images/yuna.jpg">
-                <span class="title">Title</span>
-                <p>
-                    First Line<br>
-                    Second Line
-                </p>
-                <a class="secondary-content" href="#!">
-                    <i class="material-icons">grade</i>
-                </a>
-            </li>
-            <li class="collection-item avatar">
-                <img class="circle" alt="" src="images/yuna.jpg">
-                <span class="title">Title</span>
-                <p>
-                    First Line<br>
-                    Second Line
-                </p>
-                <a class="secondary-content" href="#!">
-                    <i class="material-icons">grade</i>
-                </a>
-            </li>
-        </ul>
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">distância</a></li>
+    <li><a href="#!">menor preço</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">maior preço</a></li>
+	<li><a href="#!">melhor avaliação</a></li>
+  </ul>
+		<ul class="collection mostra-lista">
+			
+			<li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.8439020,-48.0005460)">
+				<img class="circle" alt="" src="images/gutruck.jpg">
+				<span class="title">Gutruck StreetFood</span>
+				<p>
+					Dia 29/10/2016 de 18:00 as 23:00<br>
+					Categoria: Hamburger					
+				</p>
+					<a class="secondary-content" href="#!">
+						<i class="material-icons">grade</i>
+					</a>
+			</li>
+			<li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.8439020,-48.0005460)">
+				<img class="circle" alt="" src="images/como.jpg">
+				<span class="title">Como FoodTruck</span>
+				<p>
+					Dia 29/10/2016 de 18:00 as 23:00<br>
+					Categoria: Hamburger					
+				</p>
+					<a class="secondary-content" href="#!">
+						<i class="material-icons">grade</i>
+					</a>
+			</li>
+			<li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.783781,-47.914833)">
+				<img class="circle" alt="" src="images/elperronegro.jpeg">
+				<span class="title">El Perro Negro</span>
+				<p>
+					Dia 30/10/2016 de 17:00 as 22:00<br>
+					Categoria: Hot Dog					
+				</p>
+					<a class="secondary-content" href="#!">
+						<i class="material-icons">grade</i>
+					</a>
+			</li>
+			
+		</ul>
     </div>
-</div>
+  </div>
 
 
+  
+  </div>
 
-</div>
-
-<footer class="page-footer orange">
+  <footer class="page-footer orange">
     <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Faro Food</h5>
-                <p class="grey-text text-lighten-4">Localize um FoodTruck mais perto de você.</p>
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Faro Food</h5>
+          <p class="grey-text text-lighten-4">Localize um FoodTruck mais perto de você.</p>
 
-
-            </div>
 
         </div>
+        
+      </div>
     </div>
     <div class="footer-copyright">
-        <div class="container">
-            Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">SWW BSB 2016</a>
-        </div>
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">SWW BSB 2016</a>
+      </div>
     </div>
-</footer>
+  </footer>
 
 
-<!--  Scripts-->
-<script src="./js/jquery-2.1.1.min.js"></script>
-<script src="./js/materialize.js"></script>
-<script src="./js/init.js"></script>
+  <!--  Scripts-->
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/materialize.js"></script>
+  <script src="./js/init.js"></script>
+ 
+  <script>
+  $(document).ready(function(){
+	$('.mostra-mapa').hide();
+  });
+  
+	//function success(position) {
+	
+	function carregaMapa(latitude,longitude) {
+	$('.mostra-lista').hide();
+	$('.mostra-mapa').show();
+    var s = document.querySelector('#status');
 
-<script>
-    $(document).ready(function(){
-        $('.mostra-mapa').hide();
+    if (s.className == 'success') {
+        return;
+    }
+
+    s.innerHTML = "Foodtruck farejado!";
+    s.className = 'success';
+
+    var mapcanvas = document.createElement('div');
+        mapcanvas.id = 'mapcanvas';
+        mapcanvas.style.height = '600px';
+        mapcanvas.style.width = '800px';
+
+    document.querySelector('article').appendChild(mapcanvas);
+
+    //var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+	var latlng = new google.maps.LatLng(latitude,longitude);
+    var myOptions = {
+        zoom: 15,
+        center: latlng,
+        mapTypeControl: false,
+        navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
+    var marker = new google.maps.Marker({
+        position: latlng,
+        map: map,
+        title:"Tenha um bom apetite!"
     });
 
-    //function success(position) {
+}
 
-    function carregaMapa(latitude,longitude) {
-        $('.mostra-lista').hide();
-        $('.mostra-mapa').show();
-        var s = document.querySelector('#status');
-        if (s.className == 'success') {
-            return;
-        }
-        s.innerHTML = "Você foi localizado!";
-        s.className = 'success';
-        var mapcanvas = document.createElement('div');
-        mapcanvas.id = 'mapcanvas';
-        mapcanvas.style.height = '400px';
-        mapcanvas.style.width = '560px';
-        document.querySelector('article').appendChild(mapcanvas);
-        //var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-        var latlng = new google.maps.LatLng(latitude,longitude);
-        var myOptions = {
-            zoom: 15,
-            center: latlng,
-            mapTypeControl: false,
-            navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
-        var marker = new google.maps.Marker({
-            position: latlng,
-            map: map,
-            title:"Você está aqui!"
-        });
-    }
-    function error(msg) {
-        var s = document.querySelector('#status');
+function error(msg) {
+    var s = document.querySelector('#status');
         s.innerHTML = typeof msg == 'string' ? msg : "falhou";
         s.className = 'fail';
-    }
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(success, error);
-    } else {
-        error('Seu navegador não suporta <b style="color:black;background-color:#ffff66">Geolocalização</b>!');
-    }
-</script>
+}
 
-</body>
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+} else {
+    error('Seu navegador não suporta <b style="color:black;background-color:#ffff66">Geolocalização</b>!');
+}
+  </script>
+
+  </body>
 </html>
