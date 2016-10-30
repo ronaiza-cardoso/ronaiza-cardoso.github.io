@@ -22,7 +22,7 @@
 </script>
 <body>
   <nav class="light-red lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="" class="brand-logo"><img class="circle" alt="" width="105px" style="margin-left:-40px; margin-top:10px;" src="images/farofood.png"></a>
+    <div class="nav-wrapper container"><a id="logo-container" href="" class="brand-logo logo-nova"><img class="circle" alt="" width="105px" style="margin-left:-40px; margin-top:10px;" src="images/farofood.png"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="">Lista de foodtrucks</a></li>
 		<li><a href="#!">Promoções</a></li>
@@ -30,7 +30,9 @@
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="">Lista de foodtrucks</a></li>
+          <a id="logo-container" href="" class="brand-logo"><img class="circle" alt="" width="85px" style="margin-left:-100px; margin-top:10px;" src="images/farofood.png"></a>
+          <br><br>
+          <li><a href="">Lista de foodtrucks</a></li>
 		<li><a href="#!">Promoções</a></li>
 		<li><a href="#!">Eventos</a></li>
       </ul>
@@ -182,6 +184,10 @@
   $(document).ready(function(){
 	$('.mostra-mapa').hide();
         $('.mostra-evento').hide();
+        
+        if ($(content).width() < '900') {
+            $('.logo-nova').hide();
+        }
   });
 
 	//function success(position) {
