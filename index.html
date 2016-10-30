@@ -38,7 +38,7 @@
 				</article>
 			 </section>
 		</div>
-	
+
 	<!-- Dropdown Trigger -->
 	<div class="row">
 		<div class="col s12 m12 x12">
@@ -55,13 +55,13 @@
 	<li><a href="#!">melhor avaliação</a></li>
   </ul>
 		<ul class="collection mostra-lista">
-			
+
 			<li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.8439020,-48.0005460)">
 				<img class="circle" alt="" src="images/gutruck.jpg">
 				<span class="title">Gutruck StreetFood</span>
 				<p>
 					Dia 29/10/2016 de 18:00 as 23:00<br>
-					Categoria: Hamburger					
+					Categoria: Hamburger
 				</p>
 					<a class="secondary-content" href="#!">
 						<i class="material-icons">grade</i>
@@ -72,7 +72,7 @@
 				<span class="title">Como FoodTruck</span>
 				<p>
 					Dia 29/10/2016 de 18:00 as 23:00<br>
-					Categoria: Hamburger					
+					Categoria: Hamburger
 				</p>
 					<a class="secondary-content" href="#!">
 						<i class="material-icons">grade</i>
@@ -83,19 +83,31 @@
 				<span class="title">El Perro Negro</span>
 				<p>
 					Dia 30/10/2016 de 17:00 as 22:00<br>
-					Categoria: Hot Dog					
+					Categoria: Hot Dog
 				</p>
 					<a class="secondary-content" href="#!">
 						<i class="material-icons">grade</i>
 					</a>
 			</li>
-			
+
+      <li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.8588217,-48.0719305,15.99)">
+        <img class="circle" alt="" src="images/x.jpg">
+        <span class="title">Food Parking</span>
+        <p>
+          Dia 30/10/2016<br>
+          Categoria: Evento
+        </p>
+          <a class="secondary-content" href="#!">
+            <i class="material-icons">grade</i>
+          </a>
+      </li>
+
 		</ul>
     </div>
   </div>
 
 
-  
+
   </div>
 
   <footer class="page-footer orange">
@@ -107,12 +119,12 @@
 
 
         </div>
-        
+
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">SWW BSB 2016</a>
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Faro Food</a>
       </div>
     </div>
   </footer>
@@ -122,14 +134,14 @@
   <script src="./js/jquery-2.1.1.min.js"></script>
   <script src="./js/materialize.js"></script>
   <script src="./js/init.js"></script>
- 
+
   <script>
   $(document).ready(function(){
 	$('.mostra-mapa').hide();
   });
-  
+
 	//function success(position) {
-	
+
 	function carregaMapa(latitude,longitude) {
 	$('.mostra-lista').hide();
 	$('.mostra-mapa').show();
