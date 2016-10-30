@@ -24,13 +24,13 @@
   <nav class="light-red lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="" class="brand-logo"><img class="circle" alt="" width="105px" style="margin-left:-40px; margin-top:10px;" src="images/farofood.png"></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#!">Lista de foodtrucks</a></li>
+        <li><a href="">Lista de foodtrucks</a></li>
 		<li><a href="#!">Promoções</a></li>
 		<li><a href="#!">Eventos</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#!">Lista de foodtrucks</a></li>
+        <li><a href="">Lista de foodtrucks</a></li>
 		<li><a href="#!">Promoções</a></li>
 		<li><a href="#!">Eventos</a></li>
       </ul>
@@ -38,7 +38,7 @@
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
+    <div class="container" id="largura">
 		<div class="mostra-mapa">
 			<br><h5>Responda o formulário clicando <a href="https://goo.gl/ON0cVt">aqui</a> que em seguida lhe enviaremos o cupom!</h5>
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcHX1_YtKVqW-xw8QzOiRncNOVwpJPow0&callback=initMap"></script>
@@ -50,69 +50,92 @@
 		</div>
 
 	<!-- Dropdown Trigger -->
-	<div class="row">
+	<div class="row mostra-lista">
 		<div class="col s12 m12 x12">
 	  <a class='dropdown-button btn right' href='#' data-activates='dropdown1'><i class="material-icons">import_export</i> Ordernar por</a>
 	  </div>
 	</div>
 
   <!-- Dropdown Structure -->
-  <ul id='dropdown1' class='dropdown-content'>
+  <ul id='dropdown1' class='dropdown-content mostra-lista'>
     <li><a href="#!">distância</a></li>
     <li><a href="#!">menor preço</a></li>
     <li class="divider"></li>
     <li><a href="#!">maior preço</a></li>
 	<li><a href="#!">melhor avaliação</a></li>
   </ul>
-		<ul class="collection mostra-lista">
+    <ul class="collection mostra-lista">
 
-			<li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.8439020,-48.0005460)">
-				<img class="circle" alt="" src="images/gutruck.jpg">
-				<span class="title">Gutruck StreetFood</span>
-				<p>
-					Dia 29/10/2016 de 18:00 as 23:00<br>
-					Categoria: Hamburger
-				</p>
-					<a class="secondary-content" href="#!">
-						<i class="material-icons">grade</i>
-					</a>
-			</li>
-			<li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.8439020,-48.0005460)">
-				<img class="circle" alt="" src="images/como.jpg">
-				<span class="title">Como FoodTruck</span>
-				<p>
-					Dia 29/10/2016 de 18:00 as 23:00<br>
-					Categoria: Hamburger
-				</p>
-					<a class="secondary-content" href="#!">
-						<i class="material-icons">grade</i>
-					</a>
-			</li>
-			<li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.783781,-47.914833)">
-				<img class="circle" alt="" src="images/elperronegro.jpeg">
-				<span class="title">El Perro Negro</span>
-				<p>
-					Dia 30/10/2016 de 17:00 as 22:00<br>
-					Categoria: Hot Dog
-				</p>
-					<a class="secondary-content" href="#!">
-						<i class="material-icons">grade</i>
-					</a>
-			</li>
+            <li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.8439020,-48.0005460)">
+                    <img class="circle" alt="" src="images/gutruck.jpg">
+                    <span class="title">Gutruck StreetFood</span>
+                    <p>
+                            Dia 29/10/2016 de 18:00 as 23:00<br>
+                            Categoria: Hamburger
+                    </p>
+                            <a class="secondary-content" href="#!">
+                                    <i class="material-icons">grade</i>
+                            </a>
+            </li>
+            <li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.8439020,-48.0005460)">
+                    <img class="circle" alt="" src="images/como.jpg">
+                    <span class="title">Como FoodTruck</span>
+                    <p>
+                            Dia 29/10/2016 de 18:00 as 23:00<br>
+                            Categoria: Hamburger
+                    </p>
+                            <a class="secondary-content" href="#!">
+                                    <i class="material-icons">grade</i>
+                            </a>
+            </li>
+            <li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.783781,-47.914833)">
+                    <img class="circle" alt="" src="images/elperronegro.jpeg">
+                    <span class="title">El Perro Negro</span>
+                    <p>
+                            Dia 30/10/2016 de 17:00 as 22:00<br>
+                            Categoria: Hot Dog
+                    </p>
+                            <a class="secondary-content" href="#!">
+                                    <i class="material-icons">grade</i>
+                            </a>
+            </li>
 
-      <li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.8602352,-48.0718304,16.51)">
-        <img class="circle" alt="" src="images/x.jpg">
-        <span class="title">Food Parking</span>
-        <p>
-          Dia 30/10/2016<br>
-          Categoria: Evento
-        </p>
-          <a class="secondary-content" href="#!">
-            <i class="material-icons">grade</i>
-          </a>
-      </li>
+            <li class="collection-item avatar" style="cursor:pointer;" onclick="javascript:carregaMapa(-15.8602352,-48.0718304,'evento1')">
+              <img class="circle" alt="" src="images/x.jpg">
+              <span class="title">Food Parking</span>
+              <p>
+                Dia 30/10/2016<br>
+                Categoria: Evento
+              </p>
+                <a class="secondary-content" href="#!">
+                  <i class="material-icons">grade</i>
+                </a>
+            </li>
 
-		</ul>
+	</ul>
+  
+      <div class="row mostra-evento" id="evento1">
+        <div class="col s3 m4 s6">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/como.jpg">
+              <span class="card-title">Como FoodTruck</span>
+            </div>
+            <div class="card-content">
+              <p>COMO FOOD TRUCK .. Hamburgueria móvel ..
+                #comofoodtruck</p>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a>
+            </div> -->
+          </div>
+        </div>
+          
+          
+          
+          
+      </div>
+            
     </div>
   </div>
 
@@ -148,13 +171,16 @@
   <script>
   $(document).ready(function(){
 	$('.mostra-mapa').hide();
+        $('.mostra-evento').hide();
   });
 
 	//function success(position) {
 
-	function carregaMapa(latitude,longitude) {
+	function carregaMapa(latitude,longitude, evento) {
 	$('.mostra-lista').hide();
 	$('.mostra-mapa').show();
+        if (evento != undefined)
+        $('#'+evento).show();
     var s = document.querySelector('#status');
 
     if (s.className == 'success') {
@@ -164,10 +190,18 @@
     s.innerHTML = "Foodtruck farejado!";
     s.className = 'success';
 
+
+    var largura = $('#largura').width();
+    var altura = $(window).height()*0.5;
+    
+    //alert(largura);
+    
     var mapcanvas = document.createElement('div');
         mapcanvas.id = 'mapcanvas';
-        mapcanvas.style.height = '600px';
-        mapcanvas.style.width = '800px';
+        mapcanvas.style.height = altura+'px';
+        mapcanvas.style.width = largura+'px';
+        
+   
 
     document.querySelector('article').appendChild(mapcanvas);
 
