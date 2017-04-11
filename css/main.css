@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:500");
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 html {
@@ -17,4 +18,58 @@ html {
   border: 3px solid #fff;
   border-radius: 75px;
   object-fit: cover;
+}
+
+.profile-name {
+  font-weight: bold;
+  color: #000;
+  width: 215px;
+  text-align: center;
+  position: absolute;
+  border: 0;
+  padding: 10px;
+}
+
+.social-icons {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  margin-top: -75px;
+  text-align: center;
+  font-family: serif;
+}
+
+.social-icons .item {
+   width: 150px;
+   height: 150px;
+   background-color: #000;
+   display: inline-block;
+   margin: 0 16px;
+   font-weight: 500;
+   text-align: center;
+   text-decoration: none;
+   line-height: 90px;
+   color: #fff;
+   overflow: hidden;
+   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons .item::before {
+  background-color: #FFFC31;
+  display: block;
+  font-size: 4.2em;
+  font-weight: normal;
+  line-height: 150px;
+  color: #757575;
+  transition: font-size .5s, line-heigth .5s;
+}
+
+.social-icons .item:hover::before {
+  font-size: 200%;
+  line-height: 50px;
+}
+
+@media only screen and (max-device-width: 480px) {
+
 }
