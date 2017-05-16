@@ -1,6 +1,5 @@
 
 body {
-  background-color: #2c343b;
   font-family: 'Open Sans', sans-serif;
   border: 2px solid #fff;
   margin: 0px;
@@ -48,6 +47,11 @@ nav ul li a img:hover {
 .container {
   text-align: center;
   margin: 50px 0;
+}
+
+.container a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .container h2 {
