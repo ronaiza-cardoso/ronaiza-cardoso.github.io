@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: salmon; }
+
+#scrool_btn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  border: 1px solid #fff;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50px; }
+
+nav {
+  height: 10vh;
+  background: #fff;
+  padding: 1% 2%; }
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid #3C4663; }
+
+section {
+  width: 100%;
+  padding: 1% 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 100vh; }
+  section:nth-of-type(2n) {
+    background-color: salmonlight; }
+
+img {
+  max-width: 50%;
+  object-fit: scale-down;
+  padding: 1% 2%; }
+
+.greetings {
+  color: white;
+  font-size: 3em;
+  font-style: italic;
+  padding: 2% 2%;
+  margin: 10px; }
+  .greetings span {
+    padding: .6%;
+    background: #3C4663; }
+  .greetings p {
+    font-size: .9em;
+    padding: 0;
+    margin: 0; }
+
+.blog {
+  color: white;
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 2% 3%; }
+
+.talk_with_me {
+  text-align: center;
+  max-width: 90%;
+  padding: 2%; }
+  .talk_with_me h2 {
+    font-style: italic;
+    color: #fff; }
+  .talk_with_me form .field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px; }
+    .talk_with_me form .field label {
+      text-transform: uppercase;
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #3C4663;
+      width: 100%;
+      padding: 15px 0;
+      font-size: 1.45em;
+      letter-spacing: 0.075em;
+      transition: all 333ms ease-in-out; }
+      .talk_with_me form .field label + span {
+        opacity: 0;
+        color: white;
+        display: block;
+        position: absolute;
+        top: 12px;
+        left: 7%;
+        font-size: 2.5em;
+        padding: 5%;
+        text-shadow: 1px 2px 0 salmon;
+        transition: all 333ms ease-in-out; }
+    .talk_with_me form .field input[type="text"], .talk_with_me form .field textarea {
+      border: none;
+      background: #E8E9EA;
+      width: 100%;
+      padding: 15px 5%;
+      padding-left: 19.5%;
+      color: #3C4663;
+      font-size: 1.4em;
+      letter-spacing: 0.05em;
+      text-transform: uppercase; }
+      .talk_with_me form .field input[type="text"]#msg, .talk_with_me form .field textarea#msg {
+        height: 18px;
+        resize: none;
+        transition: all 333ms ease-in-out; }
+      .talk_with_me form .field input[type="text"]:focus, .talk_with_me form .field input[type="text"].focused, .talk_with_me form .field textarea:focus, .talk_with_me form .field textarea.focused {
+        outline: none; }
+        .talk_with_me form .field input[type="text"]:focus#msg, .talk_with_me form .field input[type="text"].focused#msg, .talk_with_me form .field textarea:focus#msg, .talk_with_me form .field textarea.focused#msg {
+          padding-bottom: 150px; }
+        .talk_with_me form .field input[type="text"]:focus + label, .talk_with_me form .field input[type="text"].focused + label, .talk_with_me form .field textarea:focus + label, .talk_with_me form .field textarea.focused + label {
+          width: 18%;
+          background: salmon;
+          color: #3C4663; }
+      .talk_with_me form .field input[type="text"].focused + label, .talk_with_me form .field textarea.focused + label {
+        color: salmon; }
+    .talk_with_me form .field:hover label {
+      width: 18%;
+      background: #3C4663;
+      color: white; }
+  .talk_with_me form input[type="submit"] {
+    background: #3C4663;
+    color: white;
+    -webkit-appearance: none;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 20px;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    transition: all 333ms ease-in-out; }
+    .talk_with_me form input[type="submit"]:hover {
+      color: salmon; }
+    .talk_with_me form input[type="submit"]:focus {
+      outline: none;
+      background: #f7270f; }
+  .talk_with_me form .button {
+    padding: 3% 5%; }
+
+footer {
+  text-align: center;
+  background-color: #fff;
+  color: #6D748C; }
+
+a {
+  color: #FE4B74;
+  font-weight: 500;
+  text-decoration: none; }
+
+p {
+  color: white;
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 2% 3%; }

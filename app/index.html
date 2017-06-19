@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ronaiza Cardoso</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/main.css" rel="stylesheet">
+    </head>
+    <body>
+      <nav>
+          <a href="#hello">r&c</a>
+        | <a href="#blog">blog</a>
+        | <a href="#works">works</a>
+        | <a href="#contact">contact</a>
+      </nav>
+
+      <button onclick="topButton()" id="scrool_btn" title="Go to top">top</button>
+
+      <section id="hello">
+        <div class="greetings content">
+          <h1><span>Hello</span> <span>Stranger</span></h1>
+          <p>My name is Ronaiza and this page is to show my work</p>
+        </div>
+      </section>
+
+      <section id="blog">
+        <div class="blog content">
+            <p>Future integration with the medium's api</p>
+        </div>
+      </section>
+
+      <section id="works">
+        <img src="http://placehold.it/900x900" alt="" />
+        <img src="http://placehold.it/900x900" alt="" />
+      </section>
+
+      <section id="contact">
+        <div class="talk_with_me content">
+          <h2>Hey, do not be ashamed. Talk to me</h2>
+          <form>
+            <div class="field name-box">
+                <input type="text" id="name" placeholder="Who Are You?"/>
+                <label for="name">Name</label>
+                <span class="ss-icon">check</span>
+            </div>
+
+            <div class="field email-box">
+                <input type="text" id="email" placeholder="name@email.com"/>
+                <label for="email">Email</label>
+                <span class="ss-icon">check</span>
+            </div>
+
+            <div class="field msg-box">
+                <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+                <label for="msg">Msg</label>
+                <span class="ss-icon">check</span>
+            </div>
+
+            <input class="button" type="submit" value="Send" />
+          </form>
+        </div>
+      </section>
+
+      <footer>
+          <a href="#">github</a>
+        / <a href="#">twitter</a>
+        / <a href="#">linkdin</a>
+        / <a href="#">medium</a>
+        / <a href="#">codepen</a>
+      </footer>
+
+        <!--build:js js/main.min.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
