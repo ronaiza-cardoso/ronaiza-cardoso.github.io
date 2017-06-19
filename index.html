@@ -7,11 +7,19 @@
         <link href="./app/css/main.css" rel="stylesheet">
     </head>
     <body>
-      <nav>
-          <a href="#hello">r&c</a>
-        | <a href="#blog">blog</a>
-        | <a href="#works">works</a>
-        | <a href="#contact">contact</a>
+      <nav class="nav_bar">
+        <nav class="wrapper">
+          <div class="logo">r&c</div>
+          <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="label-toggle"></label>
+          </input>
+          <ul>
+            <li><a href="#hello">Hello</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
       </nav>
 
       <button onclick="topButton()" id="scrool_btn" title="Go to top">top</button>
