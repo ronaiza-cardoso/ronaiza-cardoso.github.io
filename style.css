@@ -1,0 +1,99 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    background: #eee;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    border-radius: 5px;
+    box-shadow: 0 2px 30px rgba(black, .2);
+    background: salmon;
+    position: relative;
+    overflow: hidden;
+}
+
+.card__content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card__content .title {
+    width: 10px;
+    padding: 0 20px;
+    color: #eee;
+    font-size: 2rem;
+    position: relative;
+}
+
+.title:after {
+    content: "";
+    background: rebeccapurple;
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    border-radius: 11px;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    z-index: 1;
+}
+
+.card:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave {
+    opacity: .4;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: #0af;
+    width: 700px;
+    height: 700px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+    animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: .1;
+    background: yellow;
+}
+
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
