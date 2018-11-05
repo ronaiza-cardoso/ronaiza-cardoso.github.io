@@ -1,13 +1,13 @@
 {
-  "main.css": "/ronaiza-cardoso.github.io/static/css/main.5fb4c6c9.chunk.css",
-  "main.js": "/ronaiza-cardoso.github.io/static/js/main.21eca3eb.chunk.js",
-  "main.js.map": "/ronaiza-cardoso.github.io/static/js/main.21eca3eb.chunk.js.map",
-  "static/js/1.39dbcc1e.chunk.js": "/ronaiza-cardoso.github.io/static/js/1.39dbcc1e.chunk.js",
-  "static/js/1.39dbcc1e.chunk.js.map": "/ronaiza-cardoso.github.io/static/js/1.39dbcc1e.chunk.js.map",
-  "runtime~main.js": "/ronaiza-cardoso.github.io/static/js/runtime~main.702b639e.js",
-  "runtime~main.js.map": "/ronaiza-cardoso.github.io/static/js/runtime~main.702b639e.js.map",
-  "static/css/main.5fb4c6c9.chunk.css.map": "/ronaiza-cardoso.github.io/static/css/main.5fb4c6c9.chunk.css.map",
-  "index.html": "/ronaiza-cardoso.github.io/index.html",
-  "precache-manifest.256c16037edc547a6d8159b315a5645f.js": "/ronaiza-cardoso.github.io/precache-manifest.256c16037edc547a6d8159b315a5645f.js",
-  "service-worker.js": "/ronaiza-cardoso.github.io/service-worker.js"
+  "main.css": "/static/css/main.5fb4c6c9.chunk.css",
+  "main.js": "/static/js/main.73a51b6e.chunk.js",
+  "main.js.map": "/static/js/main.73a51b6e.chunk.js.map",
+  "static/js/1.39dbcc1e.chunk.js": "/static/js/1.39dbcc1e.chunk.js",
+  "static/js/1.39dbcc1e.chunk.js.map": "/static/js/1.39dbcc1e.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/css/main.5fb4c6c9.chunk.css.map": "/static/css/main.5fb4c6c9.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.2e53a0668062234a71e3b3aca6a4041c.js": "/precache-manifest.2e53a0668062234a71e3b3aca6a4041c.js",
+  "service-worker.js": "/service-worker.js"
 }
