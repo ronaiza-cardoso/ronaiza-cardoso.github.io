@@ -6,6 +6,7 @@ body,html {
     height: 100vh;
 
     font-family: 'Inter', sans-serif;
+    font-size: 16px;
 }
 * {
     box-sizing: border-box;
