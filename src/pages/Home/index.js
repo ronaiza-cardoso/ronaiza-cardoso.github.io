@@ -1,25 +1,69 @@
-import React from 'react'
+import React, { useRef } from 'react'
+
+import { Parallax, ParallaxLayer } from 'react-spring/addons'
 
 import * as S from './style'
 import Header from '../../components/Header'
+import Hi from '../../components/Hi'
 
 function Home() {
+  const parallax = useRef()
   return (
     <S.Container>
-      <Header />
-      <S.Content>
-        <S.GreetingContainer>
-          <S.GreetingLine>Hello,</S.GreetingLine>
-          <S.GreetingLine>You.</S.GreetingLine>
-        </S.GreetingContainer>
-        <S.Description>
-          I&apos;m Ronaíza, a frontend developer transforming{' '}
-          <strong>data</strong> into <strong>information.</strong>
-        </S.Description>
-      </S.Content>
-      <S.ArrowDown
-        src={require('../../assets/images/5b2a8936920a7989fd639958_arrow.svg')}
-      />
+      <Header onItemClicked={(item) => parallax.current.scrollTo(item)} />
+
+      <Parallax ref={parallax} pages={4} style={{ position: 'relative' }}>
+        <ParallaxLayer offset={0} speed={1} />
+        <ParallaxLayer offset={1} speed={1} style={{ background: '#eee' }} />
+        <ParallaxLayer offset={2} speed={1} />
+        <ParallaxLayer offset={3} speed={1} style={{ background: '#eee' }} />
+
+        <ParallaxLayer offset={0} speed={0.1}>
+          <Hi />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={1}
+          speed={0.1}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#fff',
+            fontSize: '20vw',
+          }}
+        >
+          About
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={2}
+          speed={0.1}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#fff',
+            fontSize: '20vw',
+          }}
+        >
+          Projects
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={3}
+          speed={-0}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#fff',
+            fontSize: '20vw',
+          }}
+        >
+          Blog
+        </ParallaxLayer>
+      </Parallax>
     </S.Container>
   )
 }

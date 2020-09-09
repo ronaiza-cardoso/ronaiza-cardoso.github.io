@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 export const Container = styled.header`
   width: 100vw;
@@ -9,6 +9,9 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: sticky;
+  top: 0;
 `
 
 export const Logo = styled.h1`
@@ -23,10 +26,6 @@ export const NavBarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
-
-const strike = keyframes`
-  to { width: 106%; } }
 `
 
 export const NavItem = styled.div`
