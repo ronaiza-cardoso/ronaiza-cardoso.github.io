@@ -36,11 +36,6 @@ export const NavItem = styled.div`
   padding: 16px;
   margin: 1rem;
 
-  &:hover {
-    transform: scale(1.5);
-    margin: 0 4rem;
-  }
-
   &:before,
   &:after {
     content: '';

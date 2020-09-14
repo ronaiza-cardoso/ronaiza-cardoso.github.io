@@ -11,6 +11,24 @@ const fadeInUp = keyframes`
   }
 `
 
+const typing = keyframes`
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+`
+
+const blink = keyframes`
+  50% {
+    border-color: transparent;
+  }
+`
+
 const bounce = keyframes`
   0%   { transform: scale(1,1)      translateY(-100px); }
   100% { transform: scale(1,1)      translateY(0); }
@@ -47,6 +65,43 @@ export const Description = styled.p`
   font-size: clamp(16px, 5vw, 25px);
   font-weight: 300;
   margin-top: 3rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid #efadce;
+
+  display: inline-block;
+  width: 60%;
+  opacity: 0;
+  animation: ${typing} 2s steps(20, end),
+    ${blink} 0.5s step-end infinite alternate;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+  white-space: nowrap;
+  strong {
+    display: inline-block;
+    position: relative;
+    color: #333;
+
+    &::after {
+      background-color: pink;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: transform 250ms;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover::after {
+      transform: scale(1.1);
+    }
+  }
 `
 
 export const ArrowDown = styled.img`
