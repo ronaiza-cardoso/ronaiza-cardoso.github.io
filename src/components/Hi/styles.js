@@ -20,11 +20,18 @@ export const Content = styled.div`
   padding: 2rem;
 `
 
-export const GreetingContainer = styled.div``
+export const GreetingContainer = styled.div`
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10vw;
+`
 
 export const GreetingLine = styled.h1`
-  font-size: min(15vw, 20vw);
-  line-height: min(12vw, 15vw);
+  font-size: clamp(35px, 35vw, 310px);
+  line-height: clamp(35px, 35vw, 270px);
   font-weight: 300;
 
   font-family: 'Playfair Display', serif;
@@ -37,7 +44,7 @@ export const GreetingLine = styled.h1`
 
 export const Description = styled.p`
   color: grey;
-  font-size: 5vw;
+  font-size: clamp(16px, 5vw, 25px);
   font-weight: 300;
   margin-top: 3rem;
 `
@@ -46,7 +53,7 @@ export const ArrowDown = styled.img`
   position: absolute;
   left: 0px;
   right: 0px;
-  bottom: 0px;
+  bottom: 80px;
   display: block;
   margin-right: auto;
   margin-bottom: 40px;
