@@ -12,6 +12,7 @@ function Project({ item }) {
             dangerouslySetInnerHTML={{ __html: item.description }}
           />
         </S.TextContainer>
+
         <S.ImageContainer src="https://images.unsplash.com/photo-1586861375621-b28d7c63858d" />
       </S.ContentContainer>
     </S.Container>

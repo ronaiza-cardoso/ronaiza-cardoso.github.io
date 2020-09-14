@@ -13,16 +13,22 @@ export const ContentContainer = styled.div`
 
 export const ImageContainer = styled.div`
   background: ${({ src }) => `url(${src})`};
-  background-size: 70%;
-  background-position: center;
-  width: 50vw;
-  padding: 10vw;
+  width: 50%;
+  background-position: 100% 50%;
+  background-size: cover;
   background-repeat: no-repeat;
+  margin: 5vw 0;
 `
 
 export const TextContainer = styled.div`
-  width: 50vw;
-  padding: 10vw;
+  width: 50%;
+  min-height: 100vh;
+  margin: 5vw 0;
+  padding-right: 10vw;
+  padding-left: 15vw;
+  flex: 0 0 auto;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
 `
 
 export const Content = styled.div`
