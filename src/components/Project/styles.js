@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   height: 100vh;
@@ -6,7 +6,7 @@ export const Container = styled.div`
 `
 
 export const ContentContainer = styled.div`
-  background: #eee;
+  /* background: #eee; */
   display: flex;
   margin: 2vw;
 `
@@ -25,10 +25,8 @@ export const TextContainer = styled.div`
   min-height: 100vh;
   margin: 5vw 0;
   padding-right: 10vw;
-  padding-left: 15vw;
+  padding-left: 5vw;
   flex: 0 0 auto;
-  background-color: rgba(0, 0, 0, 0.75);
-  color: #fff;
 `
 
 export const Content = styled.div`

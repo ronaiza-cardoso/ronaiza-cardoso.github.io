@@ -54,8 +54,13 @@ function Home() {
 
       <Parallax ref={parallax} pages={4} style={{ position: 'relative' }}>
         <ParallaxLayer offset={0} speed={1} />
-        <ParallaxLayer offset={1} speed={1} style={{ background: '#eee' }} />
-        <ParallaxLayer offset={2} speed={1} />
+        {projects.map((item, index) => (
+          <ParallaxLayer
+            offset={index + 1}
+            speed={1}
+            style={{ background: index % 2 ? '#eee' : '#fde' }}
+          />
+        ))}
 
         <ParallaxLayer offset={0} speed={0.1}>
           <Hi />
@@ -65,13 +70,7 @@ function Home() {
           <ParallaxLayer
             offset={index + 1}
             speed={0.1}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#fff',
-              fontSize: '20vw',
-            }}
+            style={{ margin: '5vw 0' }}
           >
             <Project {...{ item }} />
           </ParallaxLayer>
