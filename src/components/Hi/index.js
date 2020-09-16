@@ -15,10 +15,6 @@ function Hi() {
           <strong>data</strong> into <strong>information.</strong>
         </S.Description>
       </S.Content>
-      <S.ArrowDown
-        src={require('../../assets/images/5b2a8936920a7989fd639958_arrow.svg')}
-        alt="arrow down"
-      />
     </>
   )
 }
