@@ -1,25 +1,45 @@
-import React, { useRef } from 'react'
-
-import { Parallax, ParallaxLayer } from 'react-spring/addons'
+import React from 'react'
 
 import * as S from './style'
-import Header from '../../components/Header'
 import Hi from '../../components/Hi'
+import Project from '../../components/Project'
 
 function Home() {
-  const parallax = useRef()
+  const items = [
+    {
+      title: '5 COMMON ERRORS IN A REACT NATIVE APP WHEN USING EXPO',
+      shortDescription:
+        'When creating a mobile app with React Native, you can use Expo to streamline some complexities. Meet the most common errors and how to solve them....',
+      img: 'https://images.unsplash.com/photo-1511376777868-611b54f68947',
+      link:
+        'https://www.imaginarycloud.com/blog/5-common-errors-found-in-a-react-native-app-using-expo/',
+    },
+    {
+      title: 'DEMYSTIFYING REACT HOOKS VS REDUX',
+      shortDescription:
+        "What is the difference between Redux and React Hooks? In this article, you'll find a walkthrough into these features and how they fit in each use-case....",
+      img: 'https://images.unsplash.com/photo-1561736778-92e52a7769ef',
+      link: 'https://www.imaginarycloud.com/blog/react-hooks-vs-redux/',
+    },
+    {
+      title: 'IONIC VS REACT NATIVE: PROS AND CONS',
+      shortDescription:
+        "Building a mobile app with a cross-platform tool has its pros and cons. Here's a comparison of Ionic vs React Native, two of the most popular choices....",
+      img: 'https://images.unsplash.com/photo-1524226108234-3cccbbbfa86d',
+      link:
+        'https://www.imaginarycloud.com/blog/ionic-vs-react-native-pros-and-cons/',
+    },
+  ]
 
   return (
     <S.Container>
-      <Header onItemClicked={(item) => parallax.current.scrollTo(item)} />
+      <Hi />
 
-      <Parallax ref={parallax} pages={4} style={{ position: 'relative' }}>
-        <ParallaxLayer offset={0} speed={1} />
-
-        <ParallaxLayer offset={0} speed={0.1}>
-          <Hi />
-        </ParallaxLayer>
-      </Parallax>
+      <S.ProjectsContainer>
+        {items.map((item, index) => (
+          <Project {...{ item, index }} key={item.link} />
+        ))}
+      </S.ProjectsContainer>
     </S.Container>
   )
 }

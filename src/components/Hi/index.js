@@ -10,10 +10,12 @@ function Hi() {
           <S.GreetingLine>Hello,</S.GreetingLine>
           <S.GreetingLine>You.</S.GreetingLine>
         </S.GreetingContainer>
-        <S.Description>
-          I&apos;m Ronaíza, a frontend developer transforming{' '}
-          <strong>data</strong> into <strong>information.</strong>
-        </S.Description>
+        <S.DescriptionContainer>
+          <S.Description>
+            I&apos;m Ronaíza, a JavaScript developer and a acoustic Guitar
+            player.
+          </S.Description>
+        </S.DescriptionContainer>
       </S.Content>
     </>
   )

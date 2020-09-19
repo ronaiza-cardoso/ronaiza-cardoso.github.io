@@ -35,7 +35,7 @@ const bounce = keyframes`
 `
 
 export const Content = styled.div`
-  padding: 2rem;
+  padding: 16px;
 `
 
 export const GreetingContainer = styled.div`
@@ -44,15 +44,16 @@ export const GreetingContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 10vw;
 `
 
 export const GreetingLine = styled.h1`
-  font-size: clamp(35px, 35vw, 310px);
+  font-size: clamp(35px, 35vw, 200px);
   line-height: clamp(35px, 35vw, 270px);
   font-weight: 300;
+  color: var(--secondary);
+  letter-spacing: -10px;
 
-  font-family: 'Playfair Display', serif;
+  font-family: 'Source Code Pro', monospace;
 
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -60,32 +61,38 @@ export const GreetingLine = styled.h1`
   animation-name: ${fadeInUp};
 `
 
+export const DescriptionContainer = styled.div``
+
 export const Description = styled.p`
   color: grey;
   font-size: clamp(16px, 5vw, 25px);
   font-weight: 300;
   margin-top: 3rem;
 
-  white-space: nowrap;
   overflow: hidden;
-  border-right: 0.15em solid #efadce;
+  border-right: 0.15em solid #333;
 
   display: inline-block;
-  width: 60%;
+  width: 820px;
   opacity: 0;
-  animation: ${typing} 2s steps(20, end),
-    ${blink} 0.5s step-end infinite alternate;
+  animation: ${typing} 2s steps(20, end), ${blink} 0.5s step-end alternate;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 
   white-space: nowrap;
+  @media (max-width: 550px) {
+    width: 100%;
+    white-space: normal;
+    animation-play-state: paused;
+    opacity: 1;
+    border: 0;
+  }
+
   strong {
     display: inline-block;
     position: relative;
-    color: #333;
 
     &::after {
-      background-color: pink;
       content: '';
       position: absolute;
       top: 0;

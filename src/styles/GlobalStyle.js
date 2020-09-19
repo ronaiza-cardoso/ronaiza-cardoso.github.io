@@ -1,13 +1,17 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-  body,html {
-    
-      height: 100vh;
+  :root {
+    --primary: #000;
+    --secondary: #52ff41;
+  }
 
+  body,html {
+      height: 100vh;
       font-family: 'Inter', sans-serif;
       font-size: 16px;
   }
+
   * {
       box-sizing: border-box;
 
