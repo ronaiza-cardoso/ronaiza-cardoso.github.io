@@ -48,6 +48,10 @@ export const GreetingContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 550px) {
+    width: 100vw;
+  }
 `
 
 export const GreetingLine = styled.h1`

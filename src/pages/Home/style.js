@@ -30,6 +30,12 @@ export const LinksContainer = styled.div`
   color: #ddd;
   top: 50%;
   margin-left: 1rem;
+
+  @media (max-width: 900px) {
+    flex-direction: row;
+    width: 100vw;
+    top: 10px;
+  }
 `
 
 export const Link = styled.a`
@@ -39,4 +45,8 @@ export const Link = styled.a`
   height: 35px;
   margin: 1rem 0;
   cursor: pointer;
+
+  @media (max-width: 900px) {
+    margin: 1rem;
+  }
 `
