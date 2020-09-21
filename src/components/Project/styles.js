@@ -10,14 +10,18 @@ const fadeIn = keyframes`
 `
 
 export const Container = styled.a`
-  width: 98vw;
-  display: flex;
-  margin: 16px;
+  margin: 2rem auto;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 100vw));
+  gap: 1.5rem;
+  justify-content: space-evenly;
+  width: 100%;
+
   border-radius: 5px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
   text-decoration: none;
   border-bottom: 1px solid var(--secondary);
-  padding: 16px;
 
   @media (prefers-reduced-motion: no-preference) {
     animation-name: ${fadeIn};
@@ -31,7 +35,8 @@ export const Container = styled.a`
 `
 
 export const Image = styled.div`
-  width: 10vw;
+  width: 100%;
+  height: 20vw;
   background: ${({ src }) => `url(${src})`};
   background-position: center;
   background-repeat: no-repeat;
@@ -44,7 +49,7 @@ export const Image = styled.div`
 `
 
 export const TextContainer = styled.div`
-  margin-left: 1rem;
+  padding: 1rem;
 `
 
 export const Title = styled.h1`

@@ -19,6 +19,9 @@ export const ProjectsContainer = styled.div`
 
 export const Content = styled.div`
   margin-left: 5vw;
+
+  display: grid;
+  place-content: center;
 `
 
 export const LinksContainer = styled.div`

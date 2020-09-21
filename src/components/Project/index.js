@@ -6,15 +6,19 @@ import FadeIn from '../FadeIn'
 
 function Project({ item, index }) {
   return (
-    <FadeIn duration={4000} delay={index * 100}>
-      <S.Container href={item.link} target="_blank">
+    <S.Container href={item.link} target="_blank">
+      <FadeIn
+        duration={4000}
+        delay={index * 100}
+        style={{ display: 'flex', flexDirection: 'column' }}
+      >
         <S.Image src={item.img} />
         <S.TextContainer>
           <S.Title>{item.title}</S.Title>
           <S.Description>{item.shortDescription}</S.Description>
         </S.TextContainer>
-      </S.Container>
-    </FadeIn>
+      </FadeIn>
+    </S.Container>
   )
 }
 

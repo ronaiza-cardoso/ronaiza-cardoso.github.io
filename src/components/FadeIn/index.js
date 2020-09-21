@@ -14,12 +14,13 @@ const fadeIn = keyframes`
     opacity: 1;
   }
 `
-const FadeIn = ({ duration = 300, delay = 0, children }) => {
+const FadeIn = ({ duration = 300, delay = 0, children, style = {} }) => {
   return (
     <Wrapper
       style={{
         animationDuration: `${duration}ms`,
         animationDelay: `${delay}ms`,
+        ...style,
       }}
     >
       {children}
@@ -37,11 +38,13 @@ FadeIn.propTypes = {
   duration: PropTypes.number,
   delay: PropTypes.number,
   children: PropTypes.element.isRequired,
+  style: PropTypes.object,
 }
 
 FadeIn.defaultProps = {
   duration: 300,
   delay: 0,
+  style: {},
 }
 
 export default FadeIn
