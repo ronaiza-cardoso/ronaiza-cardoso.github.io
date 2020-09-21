@@ -35,7 +35,11 @@ const bounce = keyframes`
 `
 
 export const Content = styled.div`
-  padding: 16px;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  position: relative;
 `
 
 export const GreetingContainer = styled.div`
@@ -73,7 +77,7 @@ export const Description = styled.p`
   border-right: 0.15em solid #333;
 
   display: inline-block;
-  width: 820px;
+  width: 100%;
   opacity: 0;
   animation: ${typing} 2s steps(20, end), ${blink} 0.5s step-end alternate;
   animation-delay: 1s;
@@ -127,4 +131,30 @@ export const ArrowDown = styled.img`
 
   animation-name: ${bounce};
   animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+`
+
+export const Menu = styled.ul`
+  color: #eee;
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  justify-content: space-around;
+  font-weight: 300;
+`
+export const MenuItem = styled.li`
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  padding: 1rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: var(--secondary);
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 10px;
+  }
 `

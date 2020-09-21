@@ -31,15 +31,42 @@ function Home() {
     },
   ]
 
+  const links = [
+    {
+      icon: require('../../assets/images/dev.svg'),
+      url: 'https://bit.ly/3kFF5jD',
+    },
+    {
+      icon: require('../../assets/images/github.svg'),
+      url: 'https://bit.ly/3iSyLEN',
+    },
+    {
+      icon: require('../../assets/images/linkdin.svg'),
+      url: 'https://bit.ly/3kFETRr',
+    },
+  ]
+
   return (
     <S.Container>
-      <Hi />
-
-      <S.ProjectsContainer>
-        {items.map((item, index) => (
-          <Project {...{ item, index }} key={item.link} />
+      <S.LinksContainer>
+        {links.map((item) => (
+          <S.Link
+            key={item.url}
+            src={item.icon}
+            href={item.url}
+            target="__blank"
+          />
         ))}
-      </S.ProjectsContainer>
+      </S.LinksContainer>
+      <S.Content>
+        <Hi />
+
+        <S.ProjectsContainer>
+          {items.map((item, index) => (
+            <Project {...{ item, index }} key={item.link} />
+          ))}
+        </S.ProjectsContainer>
+      </S.Content>
     </S.Container>
   )
 }
