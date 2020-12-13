@@ -4,19 +4,19 @@
     "main.js.map": "/static/js/main.14c6db2d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a60314e4.js",
     "runtime-main.js.map": "/static/js/runtime-main.a60314e4.js.map",
-    "static/js/2.5210180f.chunk.js": "/static/js/2.5210180f.chunk.js",
-    "static/js/2.5210180f.chunk.js.map": "/static/js/2.5210180f.chunk.js.map",
+    "static/js/2.f599cc45.chunk.js": "/static/js/2.f599cc45.chunk.js",
+    "static/js/2.f599cc45.chunk.js.map": "/static/js/2.f599cc45.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4437a3806d1ec0cf77f585a025d85f6b.js": "/precache-manifest.4437a3806d1ec0cf77f585a025d85f6b.js",
+    "precache-manifest.8928c62486bcfdb1e63a3e4f6c8c81d1.js": "/precache-manifest.8928c62486bcfdb1e63a3e4f6c8c81d1.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.5210180f.chunk.js.LICENSE.txt": "/static/js/2.5210180f.chunk.js.LICENSE.txt",
+    "static/js/2.f599cc45.chunk.js.LICENSE.txt": "/static/js/2.f599cc45.chunk.js.LICENSE.txt",
     "static/media/dev.svg": "/static/media/dev.453b538d.svg",
     "static/media/github.svg": "/static/media/github.0555bfb7.svg",
     "static/media/linkdin.svg": "/static/media/linkdin.afc106ad.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a60314e4.js",
-    "static/js/2.5210180f.chunk.js",
+    "static/js/2.f599cc45.chunk.js",
     "static/js/main.14c6db2d.chunk.js"
   ]
 }
